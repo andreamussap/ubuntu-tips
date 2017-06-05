@@ -30,7 +30,7 @@ Highlight the **Ubuntu** menu item and type **'e'** to edit it.
 
 ![](/docs/images/01-grub-start.jpg)
 
-### 3. Update GRUB menu to run *bash* in the next boot:
+### 3. Add a kernel parameter to the GRUB menu to run *bash* in the next boot:
 
 Look for the line starting with *linux* and add `init=/bin/bash` to its end.
 
