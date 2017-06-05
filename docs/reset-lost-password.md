@@ -70,7 +70,7 @@ To reset the password type:
 
 `passwd <USERNAME_LISTED_ABOVE>`
 
-**Here is a complete example on how to remount the filesystem and reset the password for the user *md*.**
+**Here is a complete example on how to remount the filesystem and reset the password for the user *ml*.**
 
 ![](/docs/images/04-reset-password.jpg)
 
