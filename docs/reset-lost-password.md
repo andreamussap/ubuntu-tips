@@ -24,21 +24,23 @@ This tutorial will reset Ubuntu *root* password, that is, you don't need to reme
 - If Ubuntu is your only installation keep pressing the left SHIFT key after starting the computer until GRUB's menu appears.
 - As I have a dual-boot, the GRUB is automatically displayed. 
 
-### 2. Open the GRUB menu in edition mode to update it.
+### 2. Open the GRUB menu in edition.
 
 Highlight the **Ubuntu** menu item and type **'e'** to edit it.
 
 ![](/docs/images/01-grub-start.jpg)
 
-### 3. Look for the line starting with *linux* and add *init=/bin/bash* to its end.
+### 3. Update GRUB menu to run *bash* in the next boot:
+
+Look for the line starting with *linux* and add `init=/bin/bash` to its end.
 
 `linux (...) ro  quiet splash $vt_handoff init=/bin/bash`
 
 ![](/docs/images/01-grub-menu-edition.jpg)
 
-### 4. boot into root shell
+### 4. Boot into root shell
 
-After update the GRUB menu in edition mode, `Press Ctrl+X` to boot directly into root shell prompt without password.
+After update the GRUB menu, `Press Ctrl+X` to boot directly into root shell prompt without password.
 
 ### 5. Once in root shell, remount Ubuntu system with read and write permission:
 
