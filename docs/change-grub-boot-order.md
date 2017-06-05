@@ -14,7 +14,7 @@ I have [dual-boot] system on my computer which starts **Ubuntu** by default, and
 
 - Ubuntu **root** password is known.
 
-> If you have lost the **root** password, refer to **Ubuntu - How to [Reset] a Lost Password** article to know how to reset the it.
+> If you have lost the **root** password, refer to **Ubuntu - How to [reset] a lost *root* password** article to know how to reset the it.
 
 # Steps
 
@@ -51,5 +51,5 @@ I have [dual-boot] system on my computer which starts **Ubuntu** by default, and
 
 
 [dual-boot]: http://searchwindowsserver.techtarget.com/definition/dual-boot
-[Reset]: https://github.com/andreamussap/ubuntu-tips/blob/master/docs/reset-lost-password.md
+[reset]: https://github.com/andreamussap/ubuntu-tips/blob/master/docs/reset-lost-password.md
 [GRUB]: https://www.gnu.org/software/grub/
