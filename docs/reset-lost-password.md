@@ -19,36 +19,36 @@ This tutorial will reset Ubuntu *root* password, that is, you don't need to reme
 
 # Steps
 
-###1. Turn on or reboot your computer to access the [GRUB] menu.
+### 1. Turn on or reboot your computer to access the [GRUB] menu.
 
 - If Ubuntu is your only installation keep pressing the left SHIFT key after starting the computer until GRUB's menu appears.
 - As I have a dual-boot, the GRUB is displayed automatically to me. 
 
-![](/docs/images/01-grub-start.jpg)
-
-###2. Open the GRUB Menu in edition mode to update it.
+### 2. Open the GRUB Menu in edition mode to update it.
 
 Highlight the **Ubuntu** menu item and type **'e'** to edit it.
 
-![](/docs/images/01-grub-menu-edition.jpg)
+![](/docs/images/01-grub-start.jpg)
 
-###3. Look for the line starting with *linux* and add *init=/bin/bash* to its end.
+### 3. Look for the line starting with *linux* and add *init=/bin/bash* to its end.
 
 `linux (...) ro  quiet splash $vt_handoff init=/bin/bash`
 
-###4. boot directly into root shell prompt without password.
+![](/docs/images/01-grub-menu-edition.jpg)
+
+### 4. boot directly into root shell prompt without password.
 
 `Press Ctrl+X`
 
-###5. Once in root shell, remount Ubuntu system with read and write permission:
+### 5. Once in root shell, remount Ubuntu system with read and write permission:
 
 `mount -rw -o remount /`
 
-###6. List the username if you forgot it:
+### 6. List the username if you forgot it:
 
 `ls /home`
 
-###7. To reset the password type:
+### 7. To reset the password type:
 
 `passwd <USERNAME_LISTED_ABOVE>`
 
@@ -57,7 +57,7 @@ Highlight the **Ubuntu** menu item and type **'e'** to edit it.
 
 ![](/docs/images/04-reset-password.jpg)
 
-###8. Finally, reboot the system and try any administrative task to test your new password.
+### 8. Finally, reboot the system and try any administrative task to test your new password.
 
 `exec /sbin/init`
 
