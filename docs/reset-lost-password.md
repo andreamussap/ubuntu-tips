@@ -32,9 +32,9 @@ Highlight the **Ubuntu** menu item and type **'e'** to edit it.
 
 ![](/docs/images/01-grub-menu-edition.jpg)
 
-**3. Look for the line starting with *linux* and edit to allow boot in read-write mode:**
+**3. Look for the line starting with *linux* and edit to include /bin/bash:**
 
-`linux (...) ro  quiet splash $vt_handoff **init=/bin/bash**`
+`linux (...) ro  quiet splash $vt_handoff init=/bin/bash`
 
 **4. Press Ctrl+X or F10 to boot directly into root shell prompt without password.**
 
