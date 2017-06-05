@@ -18,33 +18,33 @@ I have [dual-boot] system on my computer which starts **Ubuntu** by default, and
 
 # Steps
 
-## 1. Turn on or reboot your computer to access Ubuntu.
+**1.** Turn on or reboot your computer to access Ubuntu.
 
-## 2. Open the *terminal* from App Launcher, or via **Ctrl + Alt + T** keys.
+**2.** Open the *terminal* from App Launcher, or via **Ctrl + Alt + T** keys.
 
 ![](/docs/images/boot-order-02.jpg)
 
-## 3. Create a backup of the **grub** configuration file:
+**3.** Create a backup of the **grub** configuration file:
 
 > In case something goes wrong, you can revert back to the original file.
 
 `sudo cp /etc/default/grub /etc/default/grub.bak`
 
-## 4. Open the configuration file to edit it:
+**4.** Open the configuration file to edit it:
 
 `gksudo gedit /etc/default/grub`
 
 > If you don’t have gksudo installed, install it by typing: sudo apt install gksu
 
-## 5. In the **grub** file, look for the line that contains `GRUB_DEFAULT=0` and set it to `GRUB_DEFAULT=saved`.
+**5.** In the **grub** file, look for the line that contains `GRUB_DEFAULT=0` and set it to `GRUB_DEFAULT=saved`.
 
-## 6. Save and close the file.
+**6.** Save and close the file.
 
-## 7. Go back to the *terminal* and update grub to apply the changes:
+**7.** Go back to the *terminal* and update grub to apply the changes:
 
 `sudo update-grub`
 
-## 8. Set the default boot OS:
+**8.** Set the default boot OS:
 
 `sudo grub-set-default <NUMBER>`
 
