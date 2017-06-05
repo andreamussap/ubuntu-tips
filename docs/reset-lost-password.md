@@ -1,4 +1,4 @@
-# Ubuntu 16.04 How to Reset Lost Password
+# Ubuntu - How to Reset Lost Password
 You know when you write down a password and keep it so carefuly that you can't find it anymore?? That's what happen with my Ubuntu password! As a consequence of it, I couldn't perform any administrative activity on Ubuntu because every time I tried it, it asked me for the password.
 
 Then, I googled how to reset my password and I've found uncountable search results. Turns out that none of them alone could help me, so I had to gather parts of the articles to troubleshoot my own problem.
