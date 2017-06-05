@@ -1,21 +1,21 @@
-# Ubuntu - How to Reset a Lost Password
-You know when you write down a password and keep it so carefully that you can't find it anymore?? That happened to me! As a result, I couldn't perform any administrative task on Ubuntu because every time I tried it, it asked me for the password.
+# Ubuntu - How to reset a lost *root* password
+You know when you write down a password and keep it so carefully that you can't find it anymore?? That happened to me! As a result, I couldn't perform any administrative task on Ubuntu because every time I tried it, it asked me for the *root* password.
 
 So, I searched for articles on how to reset my Ubuntu password and I found uncountable results. However, none of them alone could help me, so I had to gather parts of the articles to troubleshoot my own problem.
 
 In this article I'll describe the step-by-step I used to reset my Ubuntu password, and I hope it's of sufficient help for you not having to consult different websites at the same time.
 
 # Issue
-I forgot my Ubuntu password
+I forgot my Ubuntu *root* password
 
 # Troubleshoot
-How to reset Ubuntu password
+How to reset Ubuntu *root* password
 
 # Ubuntu version
 16.04 LTS
 
 # Tips
-This troubleshooting will reset your Ubuntu password, that is, you don't need to remember your current password because it'll overwrite it.
+This tutorial will reset Ubuntu *root* password, that is, you don't need to remember your current password because it'll overwrite it.
 
 # Steps
 
