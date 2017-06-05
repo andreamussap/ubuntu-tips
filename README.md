@@ -1,4 +1,4 @@
-# Tips and Troubleshoot for Ubuntu 16.04 LTS
+# Tips and Troubleshoot for Ubuntu 16.04
 
 Everytime I'm looking for a troubleshooting guide for Ubuntu I can never find a direct solution. I always have to search in many **articles** and **How To** guides, and gather information from different sources to resolve my problems.
 
