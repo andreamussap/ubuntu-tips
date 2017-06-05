@@ -1,5 +1,5 @@
 # Ubuntu - How to Reset Lost Password
-You know when you write down a password and keep it so carefuly that you can't find it anymore?? That's what happened with my Ubuntu password! So, I couldn't perform any administrative activity on Ubuntu because every time I tried it, it asked me for the password.
+You know when you write down a password and keep it so carefully that you can't find it anymore?? That's what happened with my Ubuntu password! As a result, I couldn't perform any administrative task on Ubuntu because every time I tried it, it asked me for the password.
 
 So, I searched for articles on how to reset my Ubuntu password and I found uncountable results. However, none of them alone could help me, so I had to gather parts of the articles to troubleshoot my own problem.
 
@@ -26,45 +26,49 @@ This troubleshooting will reset your Ubuntu password, that is, you don't need to
 
 ![](/docs/images/01-grub-start.jpg)
 
-## 2. From the GRUB menu access *Ubuntu*, and in the next window select the options with *(recovery mode)* in the description
+## 2. Access the Recovery Menu
 
-## 3. Recovery Menu options.
+From the GRUB menu, select option *Ubuntu*, and in the next window select the option with *(recovery mode)* in the description.
+
+## 3. Recovery Menu options
 
 ![](/docs/images/01-recovery-menu.jpg)
 
-**grub Update grub boot loader**
+**grub - Update grub boot loader**
 
-From the *Recovery Menu*, most of the articles I've read tell you to select "root Drop to root shell promt" option to reset the password. However, when I tried that I got this error:
+Most of the articles I read tell you to select *root - Drop to root shell promt* option to reset the password. However, when I tried that I got this error:
 
 > Authentication token manipulation error.
 
-So, following another clue, before going to the "root Drop to root shell promt" I selected the option "grub Update grub boot loader", and on the screen bellow I selected *Yes*.
+So, following another clue, before going to the ~~root - Drop to root shell promt~~ I selected the option *grub Update grub boot loader*, and on the screen bellow I selected *Yes*.
 
 ![](/docs/images/03-grub-update-grub-boot-loader.jpg)
 
-**root Drop to root shell promt**
+> Note: You can try the *root - Drop to root shell promt* option first. If it works for you, great. If not, you can try the way I did.
 
-When the system finishes the update above, go back to the *Recovery Menu* window, and select "root Drop to root shell promt".
+**root - Drop to root shell promt**
+
+When the system finishes the update above, go back to the *Recovery Menu* window, and select *root Drop to root shell promt*.
 
 ## 4. Command line actions
 
 Now, you should see a prompt command line like this:
 
-> root@(none):/#
+`root@(none):/#`
 
 As the filesystem is read-only by default, you have to remount it with write permissions:
 
-> mount -rw -o remount /
+`mount -rw -o remount /`
 
-*pay attention to the spaces between the strings in the command*
+*Pay attention to the spaces between the strings !!*
 
 List the username if you forgot it:
 
-> ls /home
+`ls /home`
 
 To reset the password type:
 
-> passwd <USERNAME_LISTED_ABOVE>
+`passwd <USERNAME_LISTED_ABOVE>`
 
 Example to remount the filesystem and reset the password for user **md**
 
