@@ -8,13 +8,13 @@ I have [dual-boot] system on my computer which starts **Ubuntu** by default, and
 16.04 LTS
 
 # Prerequisites
-- From the GRUB list, write down the order of the SO you want to boot by default. (The entries start from **0**)
+- From the GRUB list, write down the order of the SO you want to boot by default. (The ordered list starts from **0**)
 
 ![](/docs/images/boot-order-01.jpg)
 
 - Ubuntu **root** password is known.
 
-> If you have lost the **root** password, refer to **Ubuntu - How to [reset] a lost *root* password** article to know how to reset the it.
+> If you have lost the **root** password, refer to **Ubuntu - How to [reset] a lost *root* password** article to know how to reset it.
 
 # Steps
 
@@ -25,8 +25,6 @@ I have [dual-boot] system on my computer which starts **Ubuntu** by default, and
 ![](/docs/images/boot-order-02.jpg)
 
 **3.** Create a backup of the **grub** configuration file:
-
-> In case something goes wrong, you can revert back to the original file.
 
 `sudo cp /etc/default/grub /etc/default/grub.bak`
 
@@ -48,7 +46,11 @@ I have [dual-boot] system on my computer which starts **Ubuntu** by default, and
 
 `sudo grub-set-default <NUMBER>`
 
+**9.** Close the *terminal*
 
+`exit`
+
+**10.** Reboot your computer to test the procedure.
 
 [dual-boot]: http://searchwindowsserver.techtarget.com/definition/dual-boot
 [reset]: https://github.com/andreamussap/ubuntu-tips/blob/master/docs/reset-lost-password.md
