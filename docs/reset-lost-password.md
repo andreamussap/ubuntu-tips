@@ -24,13 +24,13 @@ This troubleshooting will reset your Ubuntu password, that is, you don't need to
 * If Ubuntu is your only installation keep pressing the left SHIFT key after starting the computer until GRUB's menu appears.
 * As I have a dual-boot, the GRUB is displayed automatically to me. 
 
-![](/img/01-grub-start.jpg)
+![](/docs/images/01-grub-start.jpg)
 
 ## 2. From the GRUB menu access *Ubuntu*, and in the next window select the options with *(recovery mode)* in the description
 
 ## 3. Recovery Menu options.
 
-![](/img/01-recovery-menu.jpg)
+![](/docs/images/01-recovery-menu.jpg)
 
 **grub Update grub boot loader**
 
@@ -40,7 +40,7 @@ From the *Recovery Menu*, most of the articles I've read tell you to select "roo
 
 So, following another clue, before going to the "root Drop to root shell promt" I selected the option "grub Update grub boot loader", and on the screen bellow I selected *Yes*.
 
-![](/img/03-grub-update-grub-boot-loader.jpg)
+![](/docs/images/03-grub-update-grub-boot-loader.jpg)
 
 **root Drop to root shell promt**
 
@@ -68,7 +68,7 @@ To reset the password type:
 
 Example to remount the filesystem and reset the password for user **md**
 
-![](/img/04-reset-password.jpg)
+![](/docs/images/04-reset-password.jpg)
 
 
 [GRUB]: https://www.gnu.org/software/grub/
