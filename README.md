@@ -6,6 +6,5 @@ So, in order to help other people to save their time I decided that everytime I 
 
 # Troubleshootings
 
-[Ubuntu - How to Reset a Lost Password](https://github.com/andreamussap/ubuntu-tips/blob/master/docs/reset-lost-password.md)
-
+[Ubuntu - How to reset a lost *root* password](https://github.com/andreamussap/ubuntu-tips/blob/master/docs/reset-lost-password.md)r
 [Ubuntu - How to change GRUB boot order](https://github.com/andreamussap/ubuntu-tips/blob/master/docs/change-grub-boot-order.md)
